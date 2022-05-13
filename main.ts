@@ -32,7 +32,11 @@ namespace matStuff {
     //%block
     export function matrixInverseFixed(in1: Array<int32>, in2: Array<int32>, in3: Array<int32>, in4: Array<int32>): Array<Array<int32>> {
 
-       
+        mRow1 = in1;
+        mRow2 = in2;
+        mRow3 = in3;
+        mRow4 = in4;
+
         
         det = mRow1[0] * mRow2[1] * mRow3[2] * mRow4[3] + mRow1[0] * mRow2[2] * mRow3[3] * mRow4[1] + mRow1[0] * mRow2[3] * mRow3[1] * mRow4[2] - mRow1[0] * mRow2[3] * mRow3[2] * mRow4[1] - mRow1[0] * mRow2[2] * mRow3[1] * mRow4[3] - mRow1[0] * mRow2[1] * mRow3[3] * mRow4[2] - mRow1[1] * mRow2[0] * mRow3[2] * mRow4[3] - mRow1[2] * mRow2[0] * mRow3[3] * mRow4[1] - mRow1[3] * mRow2[0] * mRow3[1] * mRow4[2] + mRow1[3] * mRow2[0] * mRow3[2] * mRow4[1] + mRow1[2] * mRow2[0] * mRow3[1] * mRow4[3] + mRow1[1] * mRow2[0] * mRow3[3] * mRow4[2] + mRow1[1] * mRow2[2] * mRow3[0] * mRow4[3] + mRow1[2] * mRow2[3] * mRow3[0] * mRow4[1] + mRow1[3] * mRow2[1] * mRow3[0] * mRow4[2] - mRow1[3] * mRow2[2] * mRow3[0] * mRow4[1] - mRow1[2] * mRow2[1] * mRow3[0] * mRow4[3] - mRow1[1] * mRow2[3] * mRow3[0] * mRow4[2] - mRow1[1] * mRow2[2] * mRow3[3] * mRow4[0] - mRow1[2] * mRow2[3] * mRow3[1] * mRow4[0] - mRow1[3] * mRow2[1] * mRow3[2] * mRow4[0] + mRow1[3] * mRow2[2] * mRow3[1] * mRow4[0] + mRow1[2] * mRow2[1] * mRow3[3] * mRow4[0] + mRow1[1] * mRow2[3] * mRow3[2] * mRow4[0]
         aRow1[0] = (mRow2[1] * mRow3[2] * mRow4[3] + mRow2[2] * mRow3[3] * mRow4[1] + mRow2[3] * mRow3[1] * mRow4[2] - mRow2[3] * mRow3[2] * mRow4[1] - mRow2[2] * mRow3[1] * mRow4[3] - mRow2[1] * mRow3[3] * mRow4[2]) / det
