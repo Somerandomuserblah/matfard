@@ -2,19 +2,19 @@ let mRow1: number[] = []
 let mRow2: number[] = []
 let mRow3: number[] = []
 let mRow4: number[] = []
-let aRow1: number[] = []
-let aRow2: number[] = []
-let aRow3: number[] = []
-let aRow4: number[] = []
-let det = 0
+
+//let det = 0
 namespace matStuff {
     //%block
     export function matrixInverseFixed(in1: Array<int32>, in2: Array<int32>, in3: Array<int32>, in4: Array<int32>): Array<Array<int32>> {
-    
+        let aRow1: number[] = []
+        let aRow2: number[] = []
+        let aRow3: number[] = []
+        let aRow4: number[] = []
         
        
         
-        det = mRow1[0] * mRow2[1] * mRow3[2] * mRow4[3] + mRow1[0] * mRow2[2] * mRow3[3] * mRow4[1] + mRow1[0] * mRow2[3] * mRow3[1] * mRow4[2] - mRow1[0] * mRow2[3] * mRow3[2] * mRow4[1] - mRow1[0] * mRow2[2] * mRow3[1] * mRow4[3] - mRow1[0] * mRow2[1] * mRow3[3] * mRow4[2] - mRow1[1] * mRow2[0] * mRow3[2] * mRow4[3] - mRow1[2] * mRow2[0] * mRow3[3] * mRow4[1] - mRow1[3] * mRow2[0] * mRow3[1] * mRow4[2] + mRow1[3] * mRow2[0] * mRow3[2] * mRow4[1] + mRow1[2] * mRow2[0] * mRow3[1] * mRow4[3] + mRow1[1] * mRow2[0] * mRow3[3] * mRow4[2] + mRow1[1] * mRow2[2] * mRow3[0] * mRow4[3] + mRow1[2] * mRow2[3] * mRow3[0] * mRow4[1] + mRow1[3] * mRow2[1] * mRow3[0] * mRow4[2] - mRow1[3] * mRow2[2] * mRow3[0] * mRow4[1] - mRow1[2] * mRow2[1] * mRow3[0] * mRow4[3] - mRow1[1] * mRow2[3] * mRow3[0] * mRow4[2] - mRow1[1] * mRow2[2] * mRow3[3] * mRow4[0] - mRow1[2] * mRow2[3] * mRow3[1] * mRow4[0] - mRow1[3] * mRow2[1] * mRow3[2] * mRow4[0] + mRow1[3] * mRow2[2] * mRow3[1] * mRow4[0] + mRow1[2] * mRow2[1] * mRow3[3] * mRow4[0] + mRow1[1] * mRow2[3] * mRow3[2] * mRow4[0]
+        let det = mRow1[0] * mRow2[1] * mRow3[2] * mRow4[3] + mRow1[0] * mRow2[2] * mRow3[3] * mRow4[1] + mRow1[0] * mRow2[3] * mRow3[1] * mRow4[2] - mRow1[0] * mRow2[3] * mRow3[2] * mRow4[1] - mRow1[0] * mRow2[2] * mRow3[1] * mRow4[3] - mRow1[0] * mRow2[1] * mRow3[3] * mRow4[2] - mRow1[1] * mRow2[0] * mRow3[2] * mRow4[3] - mRow1[2] * mRow2[0] * mRow3[3] * mRow4[1] - mRow1[3] * mRow2[0] * mRow3[1] * mRow4[2] + mRow1[3] * mRow2[0] * mRow3[2] * mRow4[1] + mRow1[2] * mRow2[0] * mRow3[1] * mRow4[3] + mRow1[1] * mRow2[0] * mRow3[3] * mRow4[2] + mRow1[1] * mRow2[2] * mRow3[0] * mRow4[3] + mRow1[2] * mRow2[3] * mRow3[0] * mRow4[1] + mRow1[3] * mRow2[1] * mRow3[0] * mRow4[2] - mRow1[3] * mRow2[2] * mRow3[0] * mRow4[1] - mRow1[2] * mRow2[1] * mRow3[0] * mRow4[3] - mRow1[1] * mRow2[3] * mRow3[0] * mRow4[2] - mRow1[1] * mRow2[2] * mRow3[3] * mRow4[0] - mRow1[2] * mRow2[3] * mRow3[1] * mRow4[0] - mRow1[3] * mRow2[1] * mRow3[2] * mRow4[0] + mRow1[3] * mRow2[2] * mRow3[1] * mRow4[0] + mRow1[2] * mRow2[1] * mRow3[3] * mRow4[0] + mRow1[1] * mRow2[3] * mRow3[2] * mRow4[0]
         aRow1[0] = (mRow2[1] * mRow3[2] * mRow4[3] + mRow2[2] * mRow3[3] * mRow4[1] + mRow2[3] * mRow3[1] * mRow4[2] - mRow2[3] * mRow3[2] * mRow4[1] - mRow2[2] * mRow3[1] * mRow4[3] - mRow2[1] * mRow3[3] * mRow4[2]) / det
         aRow1[1] = ((0 - mRow1[1]) * mRow3[2] * mRow4[3] - mRow1[2] * mRow3[3] * mRow4[1] - mRow1[3] * mRow3[1] * mRow4[2] + mRow1[3] * mRow3[2] * mRow4[1] + mRow1[2] * mRow3[1] * mRow4[3] + mRow1[1] * mRow3[3] * mRow4[2]) / det
         aRow1[2] = (mRow1[1] * mRow2[2] * mRow4[3] + mRow1[2] * mRow2[3] * mRow4[1] + mRow1[3] * mRow2[1] * mRow4[2] - mRow1[3] * mRow2[2] * mRow4[1] - mRow1[2] * mRow2[1] * mRow4[3] - mRow1[1] * mRow2[3] * mRow4[2]) / det
