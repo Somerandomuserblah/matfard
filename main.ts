@@ -1,4 +1,7 @@
-
+let mRow1: number[] = []
+let mRow2: number[] = []
+let mRow3: number[] = []
+let mRow4: number[] = []
 namespace matStuff {
     //%block
     export function matrixInverseFixed(in1: Array<int32>, in2: Array<int32>, in3: Array<int32>, in4: Array<int32>): Array<Array<int32>> {
@@ -6,10 +9,7 @@ namespace matStuff {
         let aRow2: number[] = []
         let aRow3: number[] = []
         let aRow4: number[] = []
-        let mRow1: number[] = []
-        let mRow2: number[] = []
-        let mRow3: number[] = []
-        let mRow4: number[] = []
+
         let det = 0
        
         
