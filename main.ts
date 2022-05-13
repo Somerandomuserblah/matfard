@@ -1,7 +1,7 @@
 
 namespace matStuff {
     //%block
-    export function matrixInverseFixed(in1: Array<4>, in2: Array<4>, in3: Array<4>, in4: Array<4>): Array<Array<int32>> {
+    export function matrixInverseFixed(in1: Array<int32>, in2: Array<int32>, in3: Array<int32>, in4: Array<int32>): Array<Array<int32>> {
     
         let mRow1: number[] = []
         let mRow2: number[] = []
